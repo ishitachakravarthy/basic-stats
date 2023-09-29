@@ -12,4 +12,17 @@ public class MinMaxCalculation {
         }
         return max;
     }
+    /**
+     * @author: Ishita
+     *          Compute the min of an array of numbers.
+     */
+    public static double min(double... numbers) {
+        double min = Double.POSITIVE_INFINITY;
+        for (double num : numbers) {
+            if (min > num) {
+                min = num;
+            }
+        }
+        return min;
+    }
 }
